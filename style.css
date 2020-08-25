@@ -41,7 +41,7 @@ main{
 header{
     position: relative;
     height: 100vh;
-    background: url(./assets/bg_imsl_bw.jpeg) bottom center;
+    background: url(./assets/bg_imsl_bw.jpeg) center bottom;
     background-size: cover;
     background-attachment: fixed;
 
