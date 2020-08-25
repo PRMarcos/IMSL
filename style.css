@@ -41,7 +41,7 @@ main{
 header{
     position: relative;
     height: 100vh;
-    background: url(./assets/bg_church3.jpg) top center;
+    background: url(./assets/bg_imsl_bw.jpeg) bottom center;
     background-size: cover;
     background-attachment: fixed;
 
@@ -66,8 +66,9 @@ header{
 }
 
 #logofull{
-    max-width:250px;
+    max-width:350px;
     padding:10px;
+    opacity: 0.7;
    
 }
 #social{
@@ -244,6 +245,7 @@ footer{
 @media screen and (min-width: 700px) {
     header{
        max-height: 80vh;
+     
     }
     .header_content{
         flex-direction: column;
@@ -256,7 +258,7 @@ footer{
     }
    
     #logofull{
-        max-width:300px;
+        max-width:350px;
         padding:10px;
         
        
@@ -306,7 +308,7 @@ footer{
   }
   @media screen and ( max-width: 700px){
     #logofull{
-        max-width:200px;
+        max-width:300px;
        
     }
 }
