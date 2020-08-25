@@ -1,0 +1,328 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body{
+    
+    --color1: #5E3E3A;
+    --color2: #A2AB7B;
+    --color3: #AB807B;
+    --color4: #6A86AB;
+    --color5: #3F4D5E;
+}
+
+main{
+    background-color: #eee;
+}
+
+
+.btn{
+
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+
+    color: var(--color4);
+    border: 2px solid var(--color4);
+
+   
+    font-weight: bold;
+    
+}
+
+.btn:hover, .btn:focus{
+    background-color: var(--color4);
+    color: #FFF; 
+}
+
+header{
+    position: relative;
+    height: 100vh;
+    background: url(./assets/bg_church3.jpg) top center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    overflow: hidden;
+
+}
+
+.header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%,-50%);
+   
+}
+
+#logofull{
+    max-width:250px;
+    padding:10px;
+   
+}
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.social-icon{
+    height:40px;
+    opacity: 0.5;
+}
+
+.social-icon:hover,.social-icon:focus{
+    height:40px;
+    opacity: 1;
+}
+
+#warning{
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:20px 0;
+   
+}
+
+
+
+ #warning p{
+    width: 80%;
+    margin: 20px 0;
+ }
+ #warning .btn{
+    margin-bottom: 20px;
+ }
+
+
+
+#schedule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   background-color: var(--color4);
+   color: white;
+   height: 30vh;
+    
+    padding: 20px 0;
+
+}
+#oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px 0;
+
+
+}
+#TitleOferta{
+    margin: 20px 0;
+}
+.donation-methods{
+  
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-oferta{
+    
+    width:100%;
+    max-width: 350px;
+    height: 85px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-oferta img{
+    width: 20%;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    background-color:var(--color4);
+    padding-top: 20px;
+}
+#contact p{
+    width: 80%;
+    margin-bottom: 20px;
+}
+#map-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%; 
+    height: 300px;
+ 
+}
+#map-container p{
+    width: 80%; 
+    max-width: 300px; 
+  
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#map{
+    width:100%;
+    height: 100%;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+  
+    background: var(--color5); 
+    height: 50px;
+}
+#social-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.social-link{
+    display: flex;
+    margin-right: 10px;
+}
+.social-icon-footer{
+    height:20px;
+    opacity: 0.7;
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+    header{
+       max-height: 80vh;
+    }
+    .header_content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    #social{
+        margin-bottom: 0;
+    }
+   
+    #logofull{
+        max-width:300px;
+        padding:10px;
+        
+       
+    }
+
+    #warning{
+        height: 20vh;
+        overflow: hidden;
+        min-height: 150px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    
+    #warning p{
+        max-width: 300px;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        
+     }
+     #warning .btn{
+        margin-bottom: 0px;
+     }
+     #schedule{
+        
+       height: 30vh;
+       overflow: hidden;
+       min-height: 200px;
+    
+    }
+     .donation-methods{
+        flex-direction: row; 
+    }
+    .card-oferta{
+        margin:0 10px;
+    }
+    #map-container{
+        width: 80%; 
+    }
+    #social-footer{
+        justify-content: flex-end;
+    }
+    #map{
+        margin-bottom: 20px;
+    }
+  }
+  @media screen and ( max-width: 700px){
+    #logofull{
+        max-width:200px;
+       
+    }
+}
+
+  @media screen and (max-height: 550px){
+    #logofull{
+        max-width:250px;
+        margin-bottom: 20px;
+       
+    }
+
+  
+}
+
+@media screen and (max-height: 450px){
+    #social{
+        display: none;
+    }
+}
